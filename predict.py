@@ -527,6 +527,7 @@ def predict_image(detector, image_file, run_benchmark=True, threshold=0.5):
             threshold=threshold)
     return results
 
+
 def main():
     config = Config('./models')
     detector = Detector(config, './models', use_gpu=False)
